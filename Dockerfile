@@ -1,5 +1,5 @@
 # Maven image to build the Spring Boot app
-FROM maven:3.9.9-openjdk-17 AS build
+FROM maven:3.9.6-eclipse-temurin-17 AS build
 
 # Set the working directory
 WORKDIR /app
