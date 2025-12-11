@@ -15,6 +15,8 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:21-jre
 
 COPY .env /app/.env
+ENV SERVER_PORT=8080
+ENV DB_HOST=mysql.railway.internal
 
 
 WORKDIR /app
